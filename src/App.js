@@ -5,7 +5,6 @@ import BreakTimer from "./Components/BreakTimer/BreakTimer";
 import TimerControls from "./Components/TimerControls/TimerControls";
 import MainFooter from "./Components/MainFooter/MainFooter";
 import ProgressBar from "react-progressbar.js";
-import PeanutButterJellyTime from "./Components/PeanutButterJellyTime/PeanutButterJellyTime";
 
 import "./App.css";
 

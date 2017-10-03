@@ -2,6 +2,7 @@
   "name": "pomodoro-clock-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lebilly.github.io/pomodoro-clock-react",
   "dependencies": {
     "create-react-app": "^1.4.1",
     "progressbar.js": "^1.0.1",
@@ -17,10 +18,13 @@
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "watch-css":
+      "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
